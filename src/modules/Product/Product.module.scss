@@ -1,0 +1,17 @@
+.component {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 50px;
+  height: 30px;
+  background-color: #adebeb;
+  border: none;
+}
+
+.buttonDiv {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}

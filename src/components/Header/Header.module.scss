@@ -1,0 +1,145 @@
+.component {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  color: white;
+  background-color: #adebeb;
+  box-shadow: 0 0 0 0;
+  z-index: 999;
+}
+
+.content {
+  position: relative;
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1110px;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logoImage {
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: black;
+
+  p {
+    margin-left: 10px;
+  }
+}
+
+.navItem {
+  margin-right: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color ease .3s;
+  color: inherit;
+
+  &:hover {
+    padding-bottom: 3px;
+    text-decoration: none;
+    border-color: black;
+  }
+}
+
+.activeNavItem {
+  border-color: black;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex !important;
+    flex-flow: row nowrap;
+  }
+}
+
+.activeNav {
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  color: black;
+  text-align: center;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.mobileMenu {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  right: 0;
+}
+
+.mobileMenuContent {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: white;
+}
+
+.mobileMenuContentClose {
+  display: none
+}
+
+.mobileNavItem {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobileNavLink {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: black;
+
+  &:hover {
+    color: #47d1d1;
+  }
+}
+
+.activeNavItem {
+  border-color: white;
+}
+
+.overlay {
+
+}
+
+.menuIcon {
+  width: 30px;
+  margin-right: 10px;
+}
